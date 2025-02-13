@@ -20,6 +20,7 @@ import HigamatsuMission from './src/HigamatsuMission';    // ひがまつTHEミ�
 import YasaiHakase from './src/YasaiHakase';                        // やさい博士の画面
 import EiyoHakase from './src/EiyoHakase';                          // えいよう博士の画面
 import Gakutabe from './src/Gakutabe';                                // ガクタベクイズの画面
+import LevelSelect from './src/LevelSelect';                              // レベルを選択する画面
 
 const Stack = createStackNavigator();    //追記
 
@@ -80,6 +81,19 @@ const App: () => Node = () => {
             }
           }
         />
+
+<Stack.Screen
+          name="LevelSelect"
+          component={LevelSelect}
+          options={
+            {
+              headerTitle: 'ひがまつこどもヘルスサポート',
+              headerTintColor: 'green',
+            }
+          }
+        />
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );

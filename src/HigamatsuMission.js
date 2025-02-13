@@ -21,13 +21,13 @@ const HigamatsuMission: () => Node = (props) => {
 
             <Image style={styles.image} source={require('../img/eat.jpg')}/>
 
-             <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('YasaiHakase')}>
+             <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('LevelSelect', {id: 1})}>
                 <Text style={styles.typography}> イートくん </Text>
              </TouchableOpacity>
 
              <Image style={styles.image} source={require('../img/eina.jpg')}/>
 
-             <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('YasaiHakase')}>
+             <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('LevelSelect', {id: 2})}>
                 <Text style={styles.typography}> イ～ナちゃん </Text>
              </TouchableOpacity>
 

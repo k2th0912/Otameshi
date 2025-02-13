@@ -16,7 +16,7 @@ const YasaiHakase: () => Node = (props) => {
 
   return (
     <View>
-      <Text>やさい博士のメイン画面</Text>
+      <Text>やさい博士のメイン画面！</Text>
     </View>
   );
 };
