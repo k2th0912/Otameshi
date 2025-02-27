@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
+        fontSize:30
     },
 
     image: {
@@ -52,7 +53,8 @@ const styles = StyleSheet.create({
       },
 
       typography: {
-        color: 'white'
+        color: 'white',
+        fontSize:30
       },
 
       button: {
