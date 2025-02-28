@@ -13,21 +13,24 @@ import {
   Image
 } from 'react-native';
 
-const LevelSelect = ({route}) => {
-  
+const LevelSelect: () => Node = (props) => {
   let imageFile;
-
-  if (route.params.id == 1){
-    imageFile = require('../img/eat.jpg');
+  if (props.route.params.id == 1) {
+    imageFile =require('../img/eat.jpg');
    }
   else {
-    imageFile = require('../img/eina.jpg');
+    imageFile =require('../img/eina.jpg');
   }
+
   return (
     <View>
       <Text>ミッションをえらんでね！</Text>
-      <Text></Text>
       <Image style={styles.image} source={imageFile}/>
+             <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('YasaiHakase', {id: 1})}>
+                <Text style={styles.typography}> イートくん </Text>
+             </TouchableOpacity>
+
+
     </View>
   );};
 
